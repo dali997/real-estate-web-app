@@ -1,7 +1,7 @@
 const express =require("express");
-const { path } = require('express/lib/application');
+const { path } = require('path');
 const connectDB = require('./config/connect_DB')
-const path = require('path')
+
 require('dotenv').config({path:"./config/.env"})
 
 const authRouter = require('./Routes/Auth')
