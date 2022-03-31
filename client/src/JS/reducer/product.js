@@ -6,13 +6,15 @@ const initialState = {
     loadProduct : false,
     product: {},
     editProduct: "",
-    errors: []
+    errors: [],
+    
 }
 
 export const productReducer = (state= initialState, {type, payload})=>{
     switch (type){
         case GET_PRODUCTS_LOAD:
             return {...state, loadProduct:true}
+       
 
         case GET_PRODUCTS_SUCCESS:
             return {...state, products:payload, loadProducts:false}

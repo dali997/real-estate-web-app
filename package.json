@@ -7,7 +7,7 @@
     "front": "cd client && npm start",
     "back": "nodemon server.js",
     "start": "concurrently \"npm run back\" \"npm run front\"",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install  --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install  --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +24,7 @@
     "nodemon": "^2.0.15",
     "react-bootstrap": "^2.2.0",
     "react-search-field": "^2.0.1",
+    "reactstrap": "^9.0.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.1.2"
   }

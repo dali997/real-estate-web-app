@@ -14,6 +14,7 @@ export const getProducts=()=> async(dispatch)=>{
     }
 }
 
+
 export const deleteProduct = (id)=>(dispatch)=>{
     axios.delete(`api/product/${id}`)
     .then((res)=>dispatch(getProducts()))
@@ -42,4 +43,4 @@ export const addProduct= (product)=> async(dispatch)=>{
     } catch (error) {
         console.log(error)
     }
-}
+} 

@@ -11,7 +11,7 @@ import Login from '../Login';
 import { logoutUser } from '../../JS/action/authActions';
 import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
-import { toggleFalse } from '../../JS/action/edit';
+// import { toggleFalse } from '../../JS/action/edit';
 
 export default function ButtonAppBar() {
   const dispatch = useDispatch();
@@ -37,7 +37,7 @@ export default function ButtonAppBar() {
 
                     {isAuth && user.role === 1 ? (<Link  className='cl1' to="/dashboard">
                     Dashboard</Link>):(<></>)}
-            {isAuth && user.role === 1 ? (<Link  className='cl1' to="/add" onClick={dispatch(toggleFalse())}  >            
+            {isAuth && user.role === 1 ? (<Link  className='cl1' to ="/add"   >            
             Add product</Link>):(<></>)}
             
            <Link className='cl1'  to="/search">

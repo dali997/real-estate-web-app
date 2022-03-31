@@ -88,6 +88,7 @@ width: 500px;
   background-size:cover;
   background-repeat: no-repeat;
     margin-top: 0px;
+    margin-left: 80%;
     padding: 15%;
     border-radius: 20px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
@@ -107,9 +108,9 @@ width: 500px;
 
 
 .send{
-    margin-left: 80px;
+    margin-left: 90px;
     margin-top: 50px;
-    width: 200px;
+    width: 150px;
     height: 35px;
     background-color: transparent;
   border-color: #D8BFD8;
@@ -232,7 +233,8 @@ margin-left:23%;
 }
 
 .in1{
-    margin-left: 70px;
+    margin-left: 50px;
+    margin-top: 10px;
     height: 38px;
     width: 250px;
     border-radius: 20px;
@@ -246,17 +248,33 @@ margin-left:23%;
 } 
 
 .in1:focus{
+    margin-left: 10px;
     height: 50px;
     width: 350px;
-    border:  0px rgba(102, 51, 153, 0);
-    background-color: rgba(255, 255, 255, 0);
+    border:  10px rgba(255, 255, 255, 0.404);
+    background-color: rgba(255, 255, 255, 0.253);
     color: #ffffff; 
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(250, 241, 241, 0.24) 0px 3px 8px;
     transition: 0.4s;
     border-width: 0.5px;
     
 }
-
+.bat{
+    width:65px;
+    height: 45px;
+    padding: 10px;
+    background-color: #8d4fc06e;
+    border-radius: 10px;
+    border: #D8BFD8;
+    margin-top: 10px;
+    margin-left: 40%;
+    color: #e0d8e0;
+    font-weight: bold;
+}
+.bat:hover{
+    background-color: #96ceb4;
+    width: 68px;
+}
 
 .sea1{
  width: 500px;

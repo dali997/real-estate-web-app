@@ -14,7 +14,7 @@ import Home from "./components/Pages/Home";
 import Dashboard from "./components/Pages/Dashboard";
 import PrivateRoute from "./components/privateRoute.js/PrivateRoute";
 import Login from "./components/Login"
-import Search from './components/Pages/Search';
+// import Search from './components/Pages/Search';
 import Footer from './components/Pages/Footer';
 
 
@@ -40,14 +40,22 @@ function App() {
   <Route path="/" element={<Home />}/>
      <Route path="/login" element={<Login />}/>
     <Route path='/products' element={<ProductList/>}/>
-    <Route path="/add" element={<Edit/>}/>
-    <Route exact path="/edit/:id" element={<Edit/>}/>
     <Route exact path="/contact" element={<Contact/>}/>
-    <Route exact path="/search" element={<Search/>}/>
+    {/* <Route exact path="/search" element={<Search/>}/> */}
     <Route path="/dashboard" element={
        <PrivateRoute>
          <Dashboard />
      
+       </PrivateRoute>
+     } />
+     <Route path="/add" element={
+       <PrivateRoute>
+         <Edit />
+       </PrivateRoute>
+     } />
+     <Route path="/edit/:id" element={
+       <PrivateRoute>
+         <Edit />
        </PrivateRoute>
      } />
 
